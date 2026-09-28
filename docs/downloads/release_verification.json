@@ -1,0 +1,81 @@
+{
+  "policies": 9,
+  "total_inference_comparisons": 90,
+  "scope": "Exact parameter, encoder and action equivalence to original frozen checkpoints. Includes aerial, interface and submerged recorded observations.",
+  "python_torch_version": "2.11.0+cu128",
+  "numpy_version": "2.3.1",
+  "checks": [
+    {
+      "representation": "coordinates",
+      "seed": 60,
+      "recorded_samples": 10,
+      "tensor_identity": true,
+      "encoder_identity": true,
+      "maximum_action_difference": 0.0
+    },
+    {
+      "representation": "coordinates",
+      "seed": 61,
+      "recorded_samples": 10,
+      "tensor_identity": true,
+      "encoder_identity": true,
+      "maximum_action_difference": 0.0
+    },
+    {
+      "representation": "coordinates",
+      "seed": 62,
+      "recorded_samples": 10,
+      "tensor_identity": true,
+      "encoder_identity": true,
+      "maximum_action_difference": 0.0
+    },
+    {
+      "representation": "compact_dce",
+      "seed": 60,
+      "recorded_samples": 10,
+      "tensor_identity": true,
+      "encoder_identity": true,
+      "maximum_action_difference": 0.0
+    },
+    {
+      "representation": "compact_dce",
+      "seed": 61,
+      "recorded_samples": 10,
+      "tensor_identity": true,
+      "encoder_identity": true,
+      "maximum_action_difference": 0.0
+    },
+    {
+      "representation": "compact_dce",
+      "seed": 62,
+      "recorded_samples": 10,
+      "tensor_identity": true,
+      "encoder_identity": true,
+      "maximum_action_difference": 0.0
+    },
+    {
+      "representation": "action_contrast",
+      "seed": 60,
+      "recorded_samples": 10,
+      "tensor_identity": true,
+      "encoder_identity": true,
+      "maximum_action_difference": 0.0
+    },
+    {
+      "representation": "action_contrast",
+      "seed": 61,
+      "recorded_samples": 10,
+      "tensor_identity": true,
+      "encoder_identity": true,
+      "maximum_action_difference": 0.0
+    },
+    {
+      "representation": "action_contrast",
+      "seed": 62,
+      "recorded_samples": 10,
+      "tensor_identity": true,
+      "encoder_identity": true,
+      "maximum_action_difference": 0.0
+    }
+  ]
+}

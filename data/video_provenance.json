@@ -1,0 +1,164 @@
+{
+  "scope": "Two existing simulation tracking examples, replayed in a third-person camera with synchronized original onboard YOLO video.",
+  "sync": "Frame k corresponds to source video frame k and trace state k at k/10 s; camera capture flag identifies held frames.",
+  "generated_unix": 1790570837.98885,
+  "videos": {
+    "straight": {
+      "file": "straight_thirdperson_yolo_pip.mp4",
+      "sha256": "d98755091e60380d0e059110660961dbf5eca3b15161c852118101844995c8ae",
+      "bytes": 22100963,
+      "width": 1280,
+      "height": 800,
+      "fps": 10,
+      "frames": 600,
+      "duration_s": 60,
+      "full_decode_verified": true,
+      "onboard_source_alignment_samples": [
+        {
+          "frame_index": 0,
+          "source_inset_pixel_mae_excluding_overlay": 2.1999218806772762
+        },
+        {
+          "frame_index": 100,
+          "source_inset_pixel_mae_excluding_overlay": 2.295454425118471
+        },
+        {
+          "frame_index": 220,
+          "source_inset_pixel_mae_excluding_overlay": 2.430261058814829
+        },
+        {
+          "frame_index": 300,
+          "source_inset_pixel_mae_excluding_overlay": 1.2965232622808522
+        },
+        {
+          "frame_index": 350,
+          "source_inset_pixel_mae_excluding_overlay": 1.2036630153271346
+        },
+        {
+          "frame_index": 599,
+          "source_inset_pixel_mae_excluding_overlay": 1.905710536437476
+        }
+      ],
+      "minimum_adjacent_frame_mean_pixel_difference_in_external_region": 1.317372359571848,
+      "frames_with_yolo_box": 600,
+      "source_folder": "results/nezha_chase_final_v1/coordinates_60_yolo_native_straight",
+      "source_checksums": {
+        "seed83000.mp4": "2912aa7260d6878710d91e4810a3bc8b98a2503826be65696155638d32e804de",
+        "seed83000_trace.npz": "604a70e94ec89928d88b4af14e8c9c1d03b99700e98bd7d174a1bcc4f8ffbab5",
+        "seed83000_initial.json": "f059b179366c31ffdf0c595de3abb546319cc1b8a2368582b617f50743ce402f",
+        "config.json": "0d3c0277e7e0e4b05d5074ebfd1a9741475fd0ecd9a189ea257249fed903c27b",
+        "episodes.json": "534b30f01b29a8ddc5beed9ee146dd04787f62a8b263d1969a06358af010f886"
+      },
+      "original_episode": {
+        "seed": 83000,
+        "elapsed_s": 71.40774363200762,
+        "return": 540.8361200676425,
+        "length": 600,
+        "tracking_success": 0,
+        "criteria": {
+          "complete_horizon": true,
+          "early_localization": true,
+          "airborne_pursuit": true,
+          "continuous_submerged_following": true,
+          "terminal_underwater_approach": false
+        },
+        "mean_3d_error_m": 0.28304350297212105,
+        "penalized_3d_error_m": 0.28304350297212105,
+        "initial_distance_m": 3.8278584090846413,
+        "final_distance_m": 1.2400850042812663,
+        "final_5s_mean_distance_m": 1.1092232504833652,
+        "first_localization_s": 0.1,
+        "first_entry_s": 22.6,
+        "airborne_tracking_s": 15.3,
+        "airborne_horizontal_closure_m": 3.216350759413406,
+        "underwater_tracking_s": 34.9,
+        "longest_underwater_tracking_s": 30.700000000000003,
+        "terminal_underwater_approach": false,
+        "mode_changes": 1,
+        "min_clearance_m": -2.674899530468397,
+        "accepted_fraction": 0.28
+      }
+    },
+    "occlusion": {
+      "file": "curved_thirdperson_yolo_pip.mp4",
+      "sha256": "4a2f95cfac6bf28d906df6bdd692ad9333c80afe042c423ceea58b23c2ecaf0b",
+      "bytes": 21539516,
+      "width": 1280,
+      "height": 800,
+      "fps": 10,
+      "frames": 600,
+      "duration_s": 60,
+      "full_decode_verified": true,
+      "onboard_source_alignment_samples": [
+        {
+          "frame_index": 0,
+          "source_inset_pixel_mae_excluding_overlay": 2.195212012208415
+        },
+        {
+          "frame_index": 100,
+          "source_inset_pixel_mae_excluding_overlay": 2.30737061096251
+        },
+        {
+          "frame_index": 220,
+          "source_inset_pixel_mae_excluding_overlay": 1.6950152109995071
+        },
+        {
+          "frame_index": 300,
+          "source_inset_pixel_mae_excluding_overlay": 1.7450281803542673
+        },
+        {
+          "frame_index": 350,
+          "source_inset_pixel_mae_excluding_overlay": 1.5141967053029337
+        },
+        {
+          "frame_index": 599,
+          "source_inset_pixel_mae_excluding_overlay": 2.6441233558405086
+        }
+      ],
+      "minimum_adjacent_frame_mean_pixel_difference_in_external_region": 1.1501847115657857,
+      "frames_with_yolo_box": 580,
+      "source_folder": "results/nezha_chase_final_v1/coordinates_60_yolo_native_occlusion",
+      "source_checksums": {
+        "seed83000.mp4": "c81744b55de8f2eaf162772db870de9b253bc8e1b16c9634a7819d4cebac69bb",
+        "seed83000_trace.npz": "201a768a7fdd001ca0b1c395188f2cc03c7eabcc3c44501bbbcf9aa567695d0d",
+        "seed83000_initial.json": "f059b179366c31ffdf0c595de3abb546319cc1b8a2368582b617f50743ce402f",
+        "config.json": "387a4b1e12867d36785b2f5f6ba630914337f86bdbb1e7cc4d1ce66401efdcca",
+        "episodes.json": "99d6ec3283496c9b18deb0754437b72dabe37a3291b5340c6d59db1ffd141522"
+      },
+      "original_episode": {
+        "seed": 83000,
+        "elapsed_s": 72.3933538729907,
+        "return": 561.4919184708565,
+        "length": 600,
+        "tracking_success": 1,
+        "criteria": {
+          "complete_horizon": true,
+          "early_localization": true,
+          "airborne_pursuit": true,
+          "continuous_submerged_following": true,
+          "terminal_underwater_approach": true
+        },
+        "mean_3d_error_m": 0.17315338617835344,
+        "penalized_3d_error_m": 0.17315338617835344,
+        "initial_distance_m": 3.8278584090846413,
+        "final_distance_m": 1.5445171460123857,
+        "final_5s_mean_distance_m": 1.4183862393100544,
+        "first_localization_s": 0.30000000000000004,
+        "first_entry_s": 20.8,
+        "airborne_tracking_s": 19.6,
+        "airborne_horizontal_closure_m": 2.4095691736645315,
+        "underwater_tracking_s": 36.4,
+        "longest_underwater_tracking_s": 27.8,
+        "terminal_underwater_approach": true,
+        "mode_changes": 1,
+        "min_clearance_m": -2.4273784701487613,
+        "accepted_fraction": 0.26666666666666666
+      }
+    }
+  },
+  "scripts": {
+    "scripts/render_tracking_pip.py": "84cfbe73c748e7b02678acd6605d211c509c4494619f01893a8745e10dc82e14",
+    "scripts/compose_tracking_pip.py": "5daad0eab69675971733ddbade13fcf2a04b41bd66e293e5f2aea7f01c882d79",
+    "scripts/verify_tracking_pip.py": "9872e3260671a5d464b8a924bbaeca7adb37c48e7dbb5f61b20ac4752474b35b"
+  }
+}

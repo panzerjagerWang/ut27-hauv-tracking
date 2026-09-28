@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying UT27 Student Poster Competition abstract when using these control policies."
+type: software
+title: "Component Selection for HAUV Aerial–Underwater Target Tracking with Deep Reinforcement Learning"
+authors:
+  - family-names: Wang
+    given-names: Jiaqing
+    affiliation: "School of Oceanography, Shanghai Jiao Tong University"
+  - family-names: Hu
+    given-names: Ruixuan
+    affiliation: "School of Oceanography, Shanghai Jiao Tong University"
+  - family-names: Zeng
+    given-names: Zheng
+    affiliation: "School of Oceanography, Shanghai Jiao Tong University"
+version: 1.0.0
+date-released: 2026-09-28
+license: BSD-3-Clause
+repository-code: "https://github.com/panzerjagerWang/ut27-hauv-tracking"
+url: "https://panzerjagerWang.github.io/ut27-hauv-tracking/"

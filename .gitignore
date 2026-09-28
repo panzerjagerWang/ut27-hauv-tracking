@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.nbc
+*.nbi
+.venv/
+.DS_Store
+*.aux
+*.log
+*.out
+*.fls
+*.synctex.gz

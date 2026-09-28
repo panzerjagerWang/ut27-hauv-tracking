@@ -1,0 +1,30 @@
+{
+  "status": "published prototype parameter model; not calibration of the user's modified hardware",
+  "paper": "附件/Nezha-Mini_Design_and_Locomotion_of_a_Miniature_Low-Cost_Hybrid_Aerial_Underwater_Vehicle.pdf",
+  "paper_sha256": "dacf804fb88e20228b17a1d82be87b60dda3c6e93bf7e6cef523fb09ccad8771",
+  "doi": "10.1109/LRA.2022.3176438",
+  "parameter_source": "Table II on printed page 6672; equations 4-9 on pages 6672-6673; mass in abstract; geometry in Figure 3",
+  "mass_kg": 0.953,
+  "inertia_diagonal_kg_m2": [0.00254, 0.00571, 0.00771],
+  "added_mass_positive_kg": [0.29, 0.29, 0.49],
+  "added_inertia_positive_kg_m2": [0.0005, 0.0011, 0.0023],
+  "quadratic_translation_drag": [11.2, 11.2, 27.5],
+  "quadratic_rotation_drag": [0.1, 0.2, 0.3],
+  "linear_drag": "not added; the published model specifies quadratic drag",
+  "volume_m3": 0.000972,
+  "water_density_kg_m3": 1000.0,
+  "gravity_m_s2": 9.8,
+  "center_of_buoyancy_m": [0.0, 0.0, 0.0185],
+  "marine_thruster_positions_m": [[0.1403, 0.0, -0.003], [-0.0973, 0.0545, -0.010], [-0.0973, -0.0545, -0.010]],
+  "marine_thruster_axes": [[0, 0, 1], [1, 0, 0], [1, 0, 0]],
+  "air_arm_length_m": 0.124,
+  "body_height_m": 0.091,
+  "marine_bow_crossflow_factor": "1.078 exp(-1.654 u), equation 8; forward-motion operating domain",
+  "notes": [
+    "Added coefficients are stored as positive magnitudes. The paper prints negative derivatives and subtracts them from rigid mass/inertia.",
+    "The printed rotational drag row uses translational-speed units. The implementation applies its coefficients to angular rates as equation 5 specifies and flags this dimensional typesetting ambiguity.",
+    "Local mesh geometry is an appearance reference. Local conflicting masses, inertias, damping and lever arms are not silently mixed into this parameter model.",
+    "Actuator curves and simulation command ranges are separately digitized from Figure 5, with digitization error recorded. These are not new thrust measurements.",
+    "A continuously varying immersion fraction and motor response times are implementation assumptions, separately logged from Table II."
+  ]
+}

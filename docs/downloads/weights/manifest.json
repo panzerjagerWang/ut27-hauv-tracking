@@ -1,0 +1,306 @@
+{
+  "release": "UT27 Student Poster Competition control policies",
+  "license": "BSD-3-Clause",
+  "checkpoint_format": "PyTorch tensor-only actor state_dict; load with weights_only=True",
+  "selection": "Original validation-selected best.pt, without retraining or test-set reselection",
+  "policy_rate_hz": 10,
+  "models": [
+    {
+      "representation": "coordinates",
+      "display": "Coordinates",
+      "seed": 60,
+      "file": "weights/coordinates_seed60.pt",
+      "sha256": "100c47cd4e54420cca427c1f6facf6cada3e349af1b88034e4eaf81aea029e3d",
+      "input_dim": 36,
+      "hidden_widths": [
+        128,
+        128
+      ],
+      "actor_parameters": 21764,
+      "selected_online_transitions": 196608,
+      "is_bc_initialization": false,
+      "source_checkpoint": "results/nezha_chase_training_v1/coordinates_seed60/best.pt",
+      "source_checkpoint_sha256": "7503bd6f4195ac3e22a915f0ff62bfe57e3b11c1e005f1f14e1f8da900319d7f",
+      "training": {
+        "steps": 262144,
+        "bc_updates": 2000,
+        "seed": 60,
+        "gamma": 0.99,
+        "tau": 0.005,
+        "policy_delay": 2,
+        "algorithm": "TD3 with observation-only feedback BC warm start and diminishing BC regularization",
+        "validation": "8 modeled trials: seeds 82000-82003 crossed with straight and maneuver/30-32s gap; max complete aerial pursuit and submerged approach mission success then minimum fixed-horizon 3D error; no reserved test access"
+      },
+      "source_hashes": {
+        "ut27/envs/nezha_published_dynamics.py": "4f0f2a1a86fed82c7c78ec987a48b3201f4dd2fae660f0c3e8652df1fa47c9c3",
+        "ut27/rl/nezha_networks.py": "2ba3c5de704a6f3b9ee46589fed2f1b129a65041345f0703afe855428b7d968b",
+        "ut27/state/compact_dce.py": "3e41c6ff16e71a5f258bb42ce8a2ca8be411d5e1f0979ae57e4eb4442470ae3b",
+        "ut27/state/nezha_chase_state.py": "67fe2535f4af87ba8a8b8b987d86bfafa70cae13ccb57a11baf01da07abacebb"
+      }
+    },
+    {
+      "representation": "coordinates",
+      "display": "Coordinates",
+      "seed": 61,
+      "file": "weights/coordinates_seed61.pt",
+      "sha256": "cbd60f1023ac074afe12c4d947995106799e968250f23f77ca11ac51fa7e98be",
+      "input_dim": 36,
+      "hidden_widths": [
+        128,
+        128
+      ],
+      "actor_parameters": 21764,
+      "selected_online_transitions": 229376,
+      "is_bc_initialization": false,
+      "source_checkpoint": "results/nezha_chase_training_v1/coordinates_seed61/best.pt",
+      "source_checkpoint_sha256": "865fb54c9b84c7e1bdd3243f154ed1d5a779103445037d22b18237222e83cf20",
+      "training": {
+        "steps": 262144,
+        "bc_updates": 2000,
+        "seed": 61,
+        "gamma": 0.99,
+        "tau": 0.005,
+        "policy_delay": 2,
+        "algorithm": "TD3 with observation-only feedback BC warm start and diminishing BC regularization",
+        "validation": "8 modeled trials: seeds 82000-82003 crossed with straight and maneuver/30-32s gap; max complete aerial pursuit and submerged approach mission success then minimum fixed-horizon 3D error; no reserved test access"
+      },
+      "source_hashes": {
+        "ut27/envs/nezha_published_dynamics.py": "4f0f2a1a86fed82c7c78ec987a48b3201f4dd2fae660f0c3e8652df1fa47c9c3",
+        "ut27/rl/nezha_networks.py": "2ba3c5de704a6f3b9ee46589fed2f1b129a65041345f0703afe855428b7d968b",
+        "ut27/state/compact_dce.py": "3e41c6ff16e71a5f258bb42ce8a2ca8be411d5e1f0979ae57e4eb4442470ae3b",
+        "ut27/state/nezha_chase_state.py": "67fe2535f4af87ba8a8b8b987d86bfafa70cae13ccb57a11baf01da07abacebb"
+      }
+    },
+    {
+      "representation": "coordinates",
+      "display": "Coordinates",
+      "seed": 62,
+      "file": "weights/coordinates_seed62.pt",
+      "sha256": "e8dffb574d3fcbffc7dc967851d61cbb2247819cb696b0ef6732a2d3cb2b7fd0",
+      "input_dim": 36,
+      "hidden_widths": [
+        128,
+        128
+      ],
+      "actor_parameters": 21764,
+      "selected_online_transitions": 163840,
+      "is_bc_initialization": false,
+      "source_checkpoint": "results/nezha_chase_training_v1/coordinates_seed62/best.pt",
+      "source_checkpoint_sha256": "ca571672843678c4469ffd66c99e22bba2511d77a26a910fa325a204ec422745",
+      "training": {
+        "steps": 262144,
+        "bc_updates": 2000,
+        "seed": 62,
+        "gamma": 0.99,
+        "tau": 0.005,
+        "policy_delay": 2,
+        "algorithm": "TD3 with observation-only feedback BC warm start and diminishing BC regularization",
+        "validation": "8 modeled trials: seeds 82000-82003 crossed with straight and maneuver/30-32s gap; max complete aerial pursuit and submerged approach mission success then minimum fixed-horizon 3D error; no reserved test access"
+      },
+      "source_hashes": {
+        "ut27/envs/nezha_published_dynamics.py": "4f0f2a1a86fed82c7c78ec987a48b3201f4dd2fae660f0c3e8652df1fa47c9c3",
+        "ut27/rl/nezha_networks.py": "2ba3c5de704a6f3b9ee46589fed2f1b129a65041345f0703afe855428b7d968b",
+        "ut27/state/compact_dce.py": "3e41c6ff16e71a5f258bb42ce8a2ca8be411d5e1f0979ae57e4eb4442470ae3b",
+        "ut27/state/nezha_chase_state.py": "67fe2535f4af87ba8a8b8b987d86bfafa70cae13ccb57a11baf01da07abacebb"
+      }
+    },
+    {
+      "representation": "compact_dce",
+      "display": "DCE",
+      "seed": 60,
+      "file": "weights/dce_seed60.pt",
+      "sha256": "45669c971523b74e652127b2d4ad1315a47b6c56b5eb105c3c949c51369bee2b",
+      "input_dim": 45,
+      "hidden_widths": [
+        120,
+        130
+      ],
+      "actor_parameters": 21774,
+      "selected_online_transitions": 131072,
+      "is_bc_initialization": false,
+      "source_checkpoint": "results/nezha_chase_training_v1/compact_dce_seed60/best.pt",
+      "source_checkpoint_sha256": "df5e1e82854e0993ea738a4146adf138c552de80e007d414072379daf9495038",
+      "training": {
+        "steps": 262144,
+        "bc_updates": 2000,
+        "seed": 60,
+        "gamma": 0.99,
+        "tau": 0.005,
+        "policy_delay": 2,
+        "algorithm": "TD3 with observation-only feedback BC warm start and diminishing BC regularization",
+        "validation": "8 modeled trials: seeds 82000-82003 crossed with straight and maneuver/30-32s gap; max complete aerial pursuit and submerged approach mission success then minimum fixed-horizon 3D error; no reserved test access"
+      },
+      "source_hashes": {
+        "ut27/envs/nezha_published_dynamics.py": "4f0f2a1a86fed82c7c78ec987a48b3201f4dd2fae660f0c3e8652df1fa47c9c3",
+        "ut27/rl/nezha_networks.py": "2ba3c5de704a6f3b9ee46589fed2f1b129a65041345f0703afe855428b7d968b",
+        "ut27/state/compact_dce.py": "3e41c6ff16e71a5f258bb42ce8a2ca8be411d5e1f0979ae57e4eb4442470ae3b",
+        "ut27/state/nezha_chase_state.py": "67fe2535f4af87ba8a8b8b987d86bfafa70cae13ccb57a11baf01da07abacebb"
+      }
+    },
+    {
+      "representation": "compact_dce",
+      "display": "DCE",
+      "seed": 61,
+      "file": "weights/dce_seed61.pt",
+      "sha256": "f089b8fe4f5a60b8e2f01c42b37558ca5fe55ccec10e7371d641092f6c9dc1b4",
+      "input_dim": 45,
+      "hidden_widths": [
+        120,
+        130
+      ],
+      "actor_parameters": 21774,
+      "selected_online_transitions": 229376,
+      "is_bc_initialization": false,
+      "source_checkpoint": "results/nezha_chase_training_v1/compact_dce_seed61/best.pt",
+      "source_checkpoint_sha256": "787d5c533c52db94ce054eb5ae05bf2a79290ad17eece3f8b5ab711b16e1652b",
+      "training": {
+        "steps": 262144,
+        "bc_updates": 2000,
+        "seed": 61,
+        "gamma": 0.99,
+        "tau": 0.005,
+        "policy_delay": 2,
+        "algorithm": "TD3 with observation-only feedback BC warm start and diminishing BC regularization",
+        "validation": "8 modeled trials: seeds 82000-82003 crossed with straight and maneuver/30-32s gap; max complete aerial pursuit and submerged approach mission success then minimum fixed-horizon 3D error; no reserved test access"
+      },
+      "source_hashes": {
+        "ut27/envs/nezha_published_dynamics.py": "4f0f2a1a86fed82c7c78ec987a48b3201f4dd2fae660f0c3e8652df1fa47c9c3",
+        "ut27/rl/nezha_networks.py": "2ba3c5de704a6f3b9ee46589fed2f1b129a65041345f0703afe855428b7d968b",
+        "ut27/state/compact_dce.py": "3e41c6ff16e71a5f258bb42ce8a2ca8be411d5e1f0979ae57e4eb4442470ae3b",
+        "ut27/state/nezha_chase_state.py": "67fe2535f4af87ba8a8b8b987d86bfafa70cae13ccb57a11baf01da07abacebb"
+      }
+    },
+    {
+      "representation": "compact_dce",
+      "display": "DCE",
+      "seed": 62,
+      "file": "weights/dce_seed62.pt",
+      "sha256": "054b14b427399ec85045b1da66d81299ab6d834d5c1551db75235d8eb3933ab3",
+      "input_dim": 45,
+      "hidden_widths": [
+        120,
+        130
+      ],
+      "actor_parameters": 21774,
+      "selected_online_transitions": 0,
+      "is_bc_initialization": true,
+      "source_checkpoint": "results/nezha_chase_training_v1/compact_dce_seed62/best.pt",
+      "source_checkpoint_sha256": "58d5fb9e216c3766da5f12fd76f8039bb06c71076a067b8fd3f411d663b76669",
+      "training": {
+        "steps": 262144,
+        "bc_updates": 2000,
+        "seed": 62,
+        "gamma": 0.99,
+        "tau": 0.005,
+        "policy_delay": 2,
+        "algorithm": "TD3 with observation-only feedback BC warm start and diminishing BC regularization",
+        "validation": "8 modeled trials: seeds 82000-82003 crossed with straight and maneuver/30-32s gap; max complete aerial pursuit and submerged approach mission success then minimum fixed-horizon 3D error; no reserved test access"
+      },
+      "source_hashes": {
+        "ut27/envs/nezha_published_dynamics.py": "4f0f2a1a86fed82c7c78ec987a48b3201f4dd2fae660f0c3e8652df1fa47c9c3",
+        "ut27/rl/nezha_networks.py": "2ba3c5de704a6f3b9ee46589fed2f1b129a65041345f0703afe855428b7d968b",
+        "ut27/state/compact_dce.py": "3e41c6ff16e71a5f258bb42ce8a2ca8be411d5e1f0979ae57e4eb4442470ae3b",
+        "ut27/state/nezha_chase_state.py": "67fe2535f4af87ba8a8b8b987d86bfafa70cae13ccb57a11baf01da07abacebb"
+      }
+    },
+    {
+      "representation": "action_contrast",
+      "display": "AC",
+      "seed": 60,
+      "file": "weights/ac_seed60.pt",
+      "sha256": "3b51510c79815fab5d55d7cfcea817bb78ac8b5118666e6c977037ac4766ae1c",
+      "input_dim": 41,
+      "hidden_widths": [
+        125,
+        127
+      ],
+      "actor_parameters": 21764,
+      "selected_online_transitions": 0,
+      "is_bc_initialization": true,
+      "source_checkpoint": "results/nezha_chase_training_v1/action_contrast_seed60/best.pt",
+      "source_checkpoint_sha256": "268d1e3df14d4856988b97d75c033c21aaa039c6029bed599a9cbb442f50c08b",
+      "training": {
+        "steps": 262144,
+        "bc_updates": 2000,
+        "seed": 60,
+        "gamma": 0.99,
+        "tau": 0.005,
+        "policy_delay": 2,
+        "algorithm": "TD3 with observation-only feedback BC warm start and diminishing BC regularization",
+        "validation": "8 modeled trials: seeds 82000-82003 crossed with straight and maneuver/30-32s gap; max complete aerial pursuit and submerged approach mission success then minimum fixed-horizon 3D error; no reserved test access"
+      },
+      "source_hashes": {
+        "ut27/envs/nezha_published_dynamics.py": "4f0f2a1a86fed82c7c78ec987a48b3201f4dd2fae660f0c3e8652df1fa47c9c3",
+        "ut27/rl/nezha_networks.py": "2ba3c5de704a6f3b9ee46589fed2f1b129a65041345f0703afe855428b7d968b",
+        "ut27/state/compact_dce.py": "3e41c6ff16e71a5f258bb42ce8a2ca8be411d5e1f0979ae57e4eb4442470ae3b",
+        "ut27/state/nezha_chase_state.py": "67fe2535f4af87ba8a8b8b987d86bfafa70cae13ccb57a11baf01da07abacebb"
+      }
+    },
+    {
+      "representation": "action_contrast",
+      "display": "AC",
+      "seed": 61,
+      "file": "weights/ac_seed61.pt",
+      "sha256": "51bd56777437911b4efd1680b542d7178d3f398b50d334176d3ab794cf06bce6",
+      "input_dim": 41,
+      "hidden_widths": [
+        125,
+        127
+      ],
+      "actor_parameters": 21764,
+      "selected_online_transitions": 32768,
+      "is_bc_initialization": false,
+      "source_checkpoint": "results/nezha_chase_training_v1/action_contrast_seed61/best.pt",
+      "source_checkpoint_sha256": "cfa9a60e562c1e36197a80a1fe94c494a6c02ab9a5b3a9d6d183fde9544262cc",
+      "training": {
+        "steps": 262144,
+        "bc_updates": 2000,
+        "seed": 61,
+        "gamma": 0.99,
+        "tau": 0.005,
+        "policy_delay": 2,
+        "algorithm": "TD3 with observation-only feedback BC warm start and diminishing BC regularization",
+        "validation": "8 modeled trials: seeds 82000-82003 crossed with straight and maneuver/30-32s gap; max complete aerial pursuit and submerged approach mission success then minimum fixed-horizon 3D error; no reserved test access"
+      },
+      "source_hashes": {
+        "ut27/envs/nezha_published_dynamics.py": "4f0f2a1a86fed82c7c78ec987a48b3201f4dd2fae660f0c3e8652df1fa47c9c3",
+        "ut27/rl/nezha_networks.py": "2ba3c5de704a6f3b9ee46589fed2f1b129a65041345f0703afe855428b7d968b",
+        "ut27/state/compact_dce.py": "3e41c6ff16e71a5f258bb42ce8a2ca8be411d5e1f0979ae57e4eb4442470ae3b",
+        "ut27/state/nezha_chase_state.py": "67fe2535f4af87ba8a8b8b987d86bfafa70cae13ccb57a11baf01da07abacebb"
+      }
+    },
+    {
+      "representation": "action_contrast",
+      "display": "AC",
+      "seed": 62,
+      "file": "weights/ac_seed62.pt",
+      "sha256": "dc7896d2113c27744570e4db5eed7ef8b5dd222f57ae0b40a3c1a1e2d753c413",
+      "input_dim": 41,
+      "hidden_widths": [
+        125,
+        127
+      ],
+      "actor_parameters": 21764,
+      "selected_online_transitions": 0,
+      "is_bc_initialization": true,
+      "source_checkpoint": "results/nezha_chase_training_v1/action_contrast_seed62/best.pt",
+      "source_checkpoint_sha256": "58fc8c9a5e77a2c9c580bf352cb0fd709e4826c5c864f35281f4107780c13fa1",
+      "training": {
+        "steps": 262144,
+        "bc_updates": 2000,
+        "seed": 62,
+        "gamma": 0.99,
+        "tau": 0.005,
+        "policy_delay": 2,
+        "algorithm": "TD3 with observation-only feedback BC warm start and diminishing BC regularization",
+        "validation": "8 modeled trials: seeds 82000-82003 crossed with straight and maneuver/30-32s gap; max complete aerial pursuit and submerged approach mission success then minimum fixed-horizon 3D error; no reserved test access"
+      },
+      "source_hashes": {
+        "ut27/envs/nezha_published_dynamics.py": "4f0f2a1a86fed82c7c78ec987a48b3201f4dd2fae660f0c3e8652df1fa47c9c3",
+        "ut27/rl/nezha_networks.py": "2ba3c5de704a6f3b9ee46589fed2f1b129a65041345f0703afe855428b7d968b",
+        "ut27/state/compact_dce.py": "3e41c6ff16e71a5f258bb42ce8a2ca8be411d5e1f0979ae57e4eb4442470ae3b",
+        "ut27/state/nezha_chase_state.py": "67fe2535f4af87ba8a8b8b987d86bfafa70cae13ccb57a11baf01da07abacebb"
+      }
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "trials": 1200,
+  "conditions": [
+    {
+      "method": "coordinates",
+      "detector": "yolo",
+      "scenario": "straight",
+      "trials": 100,
+      "successes": 58,
+      "mean_penalized_3d_error_m": 5.147614702402158,
+      "mean_longest_underwater_tracking_s": 22.729,
+      "full_horizon_trials": 62,
+      "failed_criteria": {
+        "complete_horizon": 38,
+        "early_localization": 0,
+        "airborne_pursuit": 1,
+        "continuous_submerged_following": 37,
+        "terminal_underwater_approach": 42
+      }
+    },
+    {
+      "method": "coordinates",
+      "detector": "yolo",
+      "scenario": "occlusion",
+      "trials": 100,
+      "successes": 42,
+      "mean_penalized_3d_error_m": 5.977719737434219,
+      "mean_longest_underwater_tracking_s": 13.708999999999998,
+      "full_horizon_trials": 48,
+      "failed_criteria": {
+        "complete_horizon": 52,
+        "early_localization": 0,
+        "airborne_pursuit": 1,
+        "continuous_submerged_following": 44,
+        "terminal_underwater_approach": 58
+      }
+    },
+    {
+      "method": "coordinates",
+      "detector": "orb",
+      "scenario": "straight",
+      "trials": 100,
+      "successes": 0,
+      "mean_penalized_3d_error_m": 14.506292790931784,
+      "mean_longest_underwater_tracking_s": 0.0,
+      "full_horizon_trials": 0,
+      "failed_criteria": {
+        "complete_horizon": 100,
+        "early_localization": 96,
+        "airborne_pursuit": 100,
+        "continuous_submerged_following": 100,
+        "terminal_underwater_approach": 100
+      }
+    },
+    {
+      "method": "coordinates",
+      "detector": "orb",
+      "scenario": "occlusion",
+      "trials": 100,
+      "successes": 0,
+      "mean_penalized_3d_error_m": 14.552459426070666,
+      "mean_longest_underwater_tracking_s": 0.0,
+      "full_horizon_trials": 0,
+      "failed_criteria": {
+        "complete_horizon": 100,
+        "early_localization": 100,
+        "airborne_pursuit": 100,
+        "continuous_submerged_following": 100,
+        "terminal_underwater_approach": 100
+      }
+    },
+    {
+      "method": "compact_dce",
+      "detector": "yolo",
+      "scenario": "straight",
+      "trials": 100,
+      "successes": 54,
+      "mean_penalized_3d_error_m": 4.069186109443941,
+      "mean_longest_underwater_tracking_s": 22.703000000000007,
+      "full_horizon_trials": 63,
+      "failed_criteria": {
+        "complete_horizon": 37,
+        "early_localization": 0,
+        "airborne_pursuit": 0,
+        "continuous_submerged_following": 33,
+        "terminal_underwater_approach": 46
+      }
+    },
+    {
+      "method": "compact_dce",
+      "detector": "yolo",
+      "scenario": "occlusion",
+      "trials": 100,
+      "successes": 50,
+      "mean_penalized_3d_error_m": 4.420151533003996,
+      "mean_longest_underwater_tracking_s": 15.427,
+      "full_horizon_trials": 56,
+      "failed_criteria": {
+        "complete_horizon": 44,
+        "early_localization": 0,
+        "airborne_pursuit": 0,
+        "continuous_submerged_following": 37,
+        "terminal_underwater_approach": 50
+      }
+    },
+    {
+      "method": "compact_dce",
+      "detector": "orb",
+      "scenario": "straight",
+      "trials": 100,
+      "successes": 0,
+      "mean_penalized_3d_error_m": 14.367308177824723,
+      "mean_longest_underwater_tracking_s": 0.0,
+      "full_horizon_trials": 0,
+      "failed_criteria": {
+        "complete_horizon": 100,
+        "early_localization": 100,
+        "airborne_pursuit": 100,
+        "continuous_submerged_following": 100,
+        "terminal_underwater_approach": 100
+      }
+    },
+    {
+      "method": "compact_dce",
+      "detector": "orb",
+      "scenario": "occlusion",
+      "trials": 100,
+      "successes": 0,
+      "mean_penalized_3d_error_m": 14.367306700846711,
+      "mean_longest_underwater_tracking_s": 0.0,
+      "full_horizon_trials": 0,
+      "failed_criteria": {
+        "complete_horizon": 100,
+        "early_localization": 100,
+        "airborne_pursuit": 100,
+        "continuous_submerged_following": 100,
+        "terminal_underwater_approach": 100
+      }
+    },
+    {
+      "method": "action_contrast",
+      "detector": "yolo",
+      "scenario": "straight",
+      "trials": 100,
+      "successes": 63,
+      "mean_penalized_3d_error_m": 2.9702757583975505,
+      "mean_longest_underwater_tracking_s": 24.602000000000004,
+      "full_horizon_trials": 65,
+      "failed_criteria": {
+        "complete_horizon": 35,
+        "early_localization": 0,
+        "airborne_pursuit": 0,
+        "continuous_submerged_following": 20,
+        "terminal_underwater_approach": 37
+      }
+    },
+    {
+      "method": "action_contrast",
+      "detector": "yolo",
+      "scenario": "occlusion",
+      "trials": 100,
+      "successes": 72,
+      "mean_penalized_3d_error_m": 2.6961954115453572,
+      "mean_longest_underwater_tracking_s": 20.157,
+      "full_horizon_trials": 79,
+      "failed_criteria": {
+        "complete_horizon": 21,
+        "early_localization": 0,
+        "airborne_pursuit": 0,
+        "continuous_submerged_following": 19,
+        "terminal_underwater_approach": 28
+      }
+    },
+    {
+      "method": "action_contrast",
+      "detector": "orb",
+      "scenario": "straight",
+      "trials": 100,
+      "successes": 0,
+      "mean_penalized_3d_error_m": 14.126430194385591,
+      "mean_longest_underwater_tracking_s": 0.0,
+      "full_horizon_trials": 0,
+      "failed_criteria": {
+        "complete_horizon": 100,
+        "early_localization": 100,
+        "airborne_pursuit": 100,
+        "continuous_submerged_following": 100,
+        "terminal_underwater_approach": 100
+      }
+    },
+    {
+      "method": "action_contrast",
+      "detector": "orb",
+      "scenario": "occlusion",
+      "trials": 100,
+      "successes": 0,
+      "mean_penalized_3d_error_m": 14.126435967507213,
+      "mean_longest_underwater_tracking_s": 0.0,
+      "full_horizon_trials": 0,
+      "failed_criteria": {
+        "complete_horizon": 100,
+        "early_localization": 100,
+        "airborne_pursuit": 100,
+        "continuous_submerged_following": 100,
+        "terminal_underwater_approach": 100
+      }
+    }
+  ],
+  "paired_primary_contrasts": [
+    {
+      "candidate": "compact_dce",
+      "reference": "coordinates",
+      "metric": "tracking_success",
+      "difference": 0.02,
+      "crossed_bootstrap_97_5_interval": [
+        -0.22058823529411764,
+        0.25757575757575757
+      ],
+      "bootstrap_resamples": 10000,
+      "seed": 20260927
+    },
+    {
+      "candidate": "compact_dce",
+      "reference": "coordinates",
+      "metric": "penalized_3d_error_m",
+      "difference": -1.3179983986942196,
+      "crossed_bootstrap_97_5_interval": [
+        -4.916490466662219,
+        2.043063426785413
+      ],
+      "bootstrap_resamples": 10000,
+      "seed": 20260927
+    },
+    {
+      "candidate": "action_contrast",
+      "reference": "coordinates",
+      "metric": "tracking_success",
+      "difference": 0.175,
+      "crossed_bootstrap_97_5_interval": [
+        -0.014705882352941176,
+        0.3636482007575765
+      ],
+      "bootstrap_resamples": 10000,
+      "seed": 20260927
+    },
+    {
+      "candidate": "action_contrast",
+      "reference": "coordinates",
+      "metric": "penalized_3d_error_m",
+      "difference": -2.7294316349467334,
+      "crossed_bootstrap_97_5_interval": [
+        -5.24062305275602,
+        -0.5503955848419402
+      ],
+      "bootstrap_resamples": 10000,
+      "seed": 20260927
+    }
+  ],
+  "scope": "Actual Isaac stereo images with unchanged external published-parameter dynamics. Simulation only.",
+  "uncertainty": "Descriptive crossed bootstrap over three policies and seventeen target seeds. Paired scenario/appearance cells remain together. The seventeenth target has four cells per scenario. No additional independent training seeds.",
+  "extension_disclosure": "Sample-size extension after inspecting the original results. Policies and settings unchanged. Not a new blind method-selection study.",
+  "source_summary_sha256": "a0f8f084f29ce23cb0bba3053cfb0611eba6177ccf520a5ad75f3bf76d155a2d"
+}
